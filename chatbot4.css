@@ -18,6 +18,7 @@
   animation: slideIn 0.3s ease-in-out forwards;
   display: none;
   z-index: 9999;
+  font-family: 'Roboto', sans-serif;
 }
 @keyframes slideIn {
   from {
@@ -142,19 +143,22 @@
   justify-content: space-between;
   padding: 10px;
   background-color: #fff;
+  height: 40px;
 }
 
 .input-chat-message input[type="text"] {
   flex-grow: 1;
   flex-wrap: 1;
-  padding: 5px;
+  padding: 12px;
+  font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-right: 10px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .input-chat-message button[type="submit"] {
-  padding: 5px 10px;
+  padding: 12px 16px;
   border: none;
   border-radius: 5px;
   background-color: #ee2f26;
@@ -182,7 +186,6 @@
   max-width: 100%;
   margin-top: 0.5rem;
   margin-right: 1rem;
-  margin-left: 1rem;
   -webkit-box-flex: 1;
   flex-grow: 1;
   min-width: 0px;
@@ -217,6 +220,7 @@
   min-height: auto;
   padding: 10px;
   border: 1px solid #ccc;
+  font-family: 'Roboto', sans-serif;
 }
 
 .bot-form-button-div {
@@ -295,3 +299,4 @@
     transform: translateY(-5px);
   }
 }
+
