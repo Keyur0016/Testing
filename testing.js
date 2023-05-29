@@ -273,8 +273,7 @@
     chatContainerBrandDiv.appendChild(inputChatMessageDiv);
     chatbotDiv.appendChild(chatContainerBrandDiv);
     document.body.appendChild(chatbotDiv);
-  </script>
-  <script>
+
     const chatbotsPopButton = document.getElementById('chatbots-pop-btn');
     const chatbotsScreen = document.getElementById('chatbots-screen');
     const closeChatbtn = document.getElementById('close-chat-icon');
