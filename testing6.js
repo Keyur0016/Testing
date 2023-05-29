@@ -8,12 +8,33 @@
   bubbleButtonDiv.className = "bubble-button";
   bubbleButtonDiv.id = "chatbots-pop-btn";
 
-  var iconElement = document.createElement("i");
-  iconElement.className = "fa fa-solid fa-comments";
-  iconElement.style.color = "white";
-  iconElement.style.fontSize = "1.5rem";
+  // var iconElement = document.createElement("i");
+  // iconElement.className = "fa fa-solid fa-comments";
+  // iconElement.style.color = "white";
+  // iconElement.style.fontSize = "1.5rem";
 
-  bubbleButtonDiv.appendChild(iconElement);
+  // bubbleButtonDiv.appendChild(iconElement);
+
+  // Create an SVG element
+  var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+
+  // Set the SVG attributes
+  svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+  svg.setAttribute("width", "32");
+  svg.setAttribute("height", "32");
+  svg.setAttribute("viewBox", "0 0 32 32");
+  svg.setAttribute("id", "comment");
+
+  // Create the path element
+  var path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+  path.setAttribute("fill", "#ffffff");
+  path.setAttribute("d", "M0 2v21a2 2 0 0 0 2 2h18l8 7v-7h2a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm1 1a2 2 0 0 1 2-2h26a2 2 0 0 1 2 2v19a2 2 0 0 1-2 2h-2v6l-5.833-5L20 24H3a2 2 0 0 1-2-2V3z");
+
+  // Append the path to the SVG element
+  svg.appendChild(path);
+
+
+  bubbleButtonDiv.appendChild(svg);
   chatbotDiv.appendChild(bubbleButtonDiv);
 
   // End Chatbot create button   
@@ -51,12 +72,27 @@
   var closeChatIconDiv = document.createElement("div");
   closeChatIconDiv.className = "close-chat-icon";
   closeChatIconDiv.id = "close-chat-icon";
-  var closeIconElement = document.createElement("i");
-  closeIconElement.className = "fa fa-times";
+  // var closeIconElement = document.createElement("i");
+  // closeIconElement.className = "fa fa-times";
 
-  // Append the close icon element to the close chat icon div element
+  // // Append the close icon element to the close chat icon div element
 
-  closeChatIconDiv.appendChild(closeIconElement);
+  // closeChatIconDiv.appendChild(closeIconElement);
+
+  var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+  svg.setAttribute("viewBox", "0 0 24 24");
+  svg.setAttribute("height", "25px") ; 
+  svg.setAttribute("width", "25px") ; 
+
+  var path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+  path.setAttribute("d", "M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z");
+  path.setAttribute("fill", "#5e6165");
+
+  svg.appendChild(path);
+
+
+  closeChatIconDiv.appendChild(svg);
 
   // Append the chat logo div, chat heading text div, and close chat icon div to the chat heading div
 
@@ -340,3 +376,8 @@
       botIntroMessage.style.display = "none";
     }
   });
+
+  
+  
+  
+  
