@@ -1,4 +1,4 @@
-<script>
+
   // main root element
   var chatbotDiv = document.createElement("div");
   chatbotDiv.className = "chatbot-div";
@@ -265,8 +265,6 @@
   chatbotDiv.appendChild(chatContainerBrandDiv);
   document.body.appendChild(chatbotDiv);
 
-</script>
-<script>
 
   // pop-up-message open-close button  handler 
 
@@ -333,4 +331,4 @@
     }
   });
 
-</script>
+
