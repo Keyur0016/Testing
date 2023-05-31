@@ -75,91 +75,91 @@ function Fetch_chatbot_details(){
 
                 // ==== Load Previous data ==== // 
     
-                let AI_chat_data = localStorage.getItem("AI-chat") ; 
-                AI_chat_data = JSON.parse(AI_chat_data) ; 
+                // let AI_chat_data = localStorage.getItem("AI-chat") ; 
+                // AI_chat_data = JSON.parse(AI_chat_data) ; 
 
-//                 AI_chat_data.map((element) => {
+                // AI_chat_data.map((element) => {
 
-//                     //  ===== Main conversion message division ===== // 
+                //     //  ===== Main conversion message division ===== // 
 
-//                     var conversionDiv = document.getElementById("conversion-division")
+                //     var conversionDiv = document.getElementById("conversion-division")
 
-//                     // ==== Show user question in Chatbot ===== // 
+                //     // ==== Show user question in Chatbot ===== // 
 
-//                     var userMessageChatWrapperDiv = document.createElement("div");
-//                     userMessageChatWrapperDiv.className = "user-message-chat-wrapper";
+                //     var userMessageChatWrapperDiv = document.createElement("div");
+                //     userMessageChatWrapperDiv.className = "user-message-chat-wrapper";
 
-//                     var userNameDiv = document.createElement("div");
-//                     userNameDiv.innerHTML = '<span style="color: rgb(24, 25, 25)">you</span>';
+                //     var userNameDiv = document.createElement("div");
+                //     userNameDiv.innerHTML = '<span style="color: rgb(24, 25, 25)">you</span>';
 
-//                     var userMessageDiv = document.createElement("div");
-//                     userMessageDiv.className = "user-message-chat";
-//                     userMessageDiv.textContent = element.User_message;
-//                     userMessageDiv.style.backgroundColor = global_user_message_bg_color ; 
+                //     var userMessageDiv = document.createElement("div");
+                //     userMessageDiv.className = "user-message-chat";
+                //     userMessageDiv.textContent = element.User_message;
+                //     userMessageDiv.style.backgroundColor = global_user_message_bg_color ; 
 
-//                     userMessageChatWrapperDiv.appendChild(userNameDiv);
+                //     userMessageChatWrapperDiv.appendChild(userNameDiv);
 
-//                     userMessageChatWrapperDiv.appendChild(userMessageDiv);
+                //     userMessageChatWrapperDiv.appendChild(userMessageDiv);
 
-//                     conversionDiv.appendChild(userMessageChatWrapperDiv);
+                //     conversionDiv.appendChild(userMessageChatWrapperDiv);
 
-//                     if (element.Warning == "No"){
+                //     if (element.Warning == "No"){
 
-//                         // ==== Show User question response in Chabtot ==== // 
+                //         // ==== Show User question response in Chabtot ==== // 
 
-//                         var conversionDiv = document.getElementById("conversion-division")
+                //         var conversionDiv = document.getElementById("conversion-division")
 
-//                         var botMessageChatWrapperDiv = document.createElement("div");
-//                         botMessageChatWrapperDiv.className = "bot-message-chat-wrapper";
-//                         botMessageChatWrapperDiv.id = "bot-introduction-message";
+                //         var botMessageChatWrapperDiv = document.createElement("div");
+                //         botMessageChatWrapperDiv.className = "bot-message-chat-wrapper";
+                //         botMessageChatWrapperDiv.id = "bot-introduction-message";
                     
-//                         // Create the span element with inline style and "ChatBot" text
+                //         // Create the span element with inline style and "ChatBot" text
 
-//                         var botNameSpan = document.createElement("span");
-//                         botNameSpan.style.color = "rgb(24, 25, 25)";
-//                         botNameSpan.textContent = "ChatBot";
+                //         var botNameSpan = document.createElement("span");
+                //         botNameSpan.style.color = "rgb(24, 25, 25)";
+                //         botNameSpan.textContent = "ChatBot";
 
-//                         var botMessageChatDiv = document.createElement("div");
-//                         botMessageChatDiv.className = "bot-message-chat";
-//                         botMessageChatDiv.textContent = element.Chatbot_message;
-//                         botMessageChatDiv.style.backgroundColor = global_chatbot_response_bg_color ; 
+                //         var botMessageChatDiv = document.createElement("div");
+                //         botMessageChatDiv.className = "bot-message-chat";
+                //         botMessageChatDiv.textContent = element.Chatbot_message;
+                //         botMessageChatDiv.style.backgroundColor = global_chatbot_response_bg_color ; 
                     
-//                         botMessageChatWrapperDiv.appendChild(botNameSpan);
+                //         botMessageChatWrapperDiv.appendChild(botNameSpan);
                     
-//                         botMessageChatWrapperDiv.appendChild(botMessageChatDiv);
+                //         botMessageChatWrapperDiv.appendChild(botMessageChatDiv);
                     
-//                         conversionDiv.appendChild(botMessageChatWrapperDiv);
+                //         conversionDiv.appendChild(botMessageChatWrapperDiv);
                         
-//                     }   else{
+                //     }   else{
 
-//                         // ==== Show User question response in Chabtot ==== // 
+                //         // ==== Show User question response in Chabtot ==== // 
 
-//                         var conversionDiv = document.getElementById("conversion-division")
+                //         var conversionDiv = document.getElementById("conversion-division")
 
-//                         var botMessageChatWrapperDiv = document.createElement("div");
-//                         botMessageChatWrapperDiv.className = "bot-message-chat-wrapper";
-//                         botMessageChatWrapperDiv.id = "bot-introduction-message";
+                //         var botMessageChatWrapperDiv = document.createElement("div");
+                //         botMessageChatWrapperDiv.className = "bot-message-chat-wrapper";
+                //         botMessageChatWrapperDiv.id = "bot-introduction-message";
                     
-//                         // Create the span element with inline style and "ChatBot" text
+                //         // Create the span element with inline style and "ChatBot" text
 
-//                         var botNameSpan = document.createElement("span");
-//                         botNameSpan.style.color = "rgb(24, 25, 25)";
-//                         botNameSpan.textContent = "ChatBot";
+                //         var botNameSpan = document.createElement("span");
+                //         botNameSpan.style.color = "rgb(24, 25, 25)";
+                //         botNameSpan.textContent = "ChatBot";
 
-//                         var botMessageChatDiv = document.createElement("div");
-//                         botMessageChatDiv.className = "bot-message-chat";
-//                         botMessageChatDiv.textContent = element.Chatbot_message;
-//                         botMessageChatDiv.style.color = "#ff0b00" ; 
-//                         botMessageChatDiv.style.backgroundColor = global_chatbot_response_bg_color ; 
+                //         var botMessageChatDiv = document.createElement("div");
+                //         botMessageChatDiv.className = "bot-message-chat";
+                //         botMessageChatDiv.textContent = element.Chatbot_message;
+                //         botMessageChatDiv.style.color = "#ff0b00" ; 
+                //         botMessageChatDiv.style.backgroundColor = global_chatbot_response_bg_color ; 
                     
-//                         botMessageChatWrapperDiv.appendChild(botNameSpan);
+                //         botMessageChatWrapperDiv.appendChild(botNameSpan);
                     
-//                         botMessageChatWrapperDiv.appendChild(botMessageChatDiv);
+                //         botMessageChatWrapperDiv.appendChild(botMessageChatDiv);
                     
-//                         conversionDiv.appendChild(botMessageChatWrapperDiv);
+                //         conversionDiv.appendChild(botMessageChatWrapperDiv);
 
-//                     }
-                })
+                //     }
+                // })
 
                 
 
@@ -352,4 +352,3 @@ window.addEventListener("load", function() {
         }
     });
 });
-
