@@ -1,4 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+.chatbot-div{
+  height: 100%;
+  width: 100%;
+}
+.pop-up-message{
+  background-color: white; 
+  width: fit-content; 
+  padding: 10px; 
+  border-radius: 10px; 
+  position: fixed; 
+  bottom : 90px ; 
+  right: 10px;
+  color: #080808;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pop-up-message-close-icon{
+   background: #cccccca6;
+   padding: 5px;
+   height: 30px;
+   width: 30px;
+   border-radius: 50px;
+   cursor: pointer;
+   margin-left: 10px;
+}
+
+.bubble-button {
+  background: #ee2f26;
+  padding: 20px;
+  width: fit-content;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
 .chat-container-brand {
   margin: 20px;
   max-width: calc(100% - 40px);
@@ -69,6 +107,16 @@
   width: 25px;
   height: 25px;
 }
+.delete-chat-icon {
+  position: absolute;
+  top: 73px;
+  right: 2px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+
 
 
 .conversion {
@@ -143,7 +191,6 @@
   justify-content: space-between;
   padding: 10px;
   background-color: #fff;
-  height: 40px;
 }
 
 .input-chat-message input[type="text"] {
@@ -151,11 +198,13 @@
   flex-wrap: 1;
   padding: 12px;
   font-size: 16px;
-  border: 1px solid #ccc;
   border-radius: 5px;
   margin-right: 10px;
   font-family: 'Roboto', sans-serif;
+  border: none;
+  outline: none;
 }
+
 
 .input-chat-message button[type="submit"] {
   padding: 12px 16px;
@@ -166,34 +215,22 @@
   cursor: pointer;
 }
 
-.bubble-button {
-  background: #ee2f26;
-  padding: 20px;
-  width: fit-content;
-  border-radius: 50%;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  cursor: pointer;
-}
-
 .bot-form-div {
-  border-radius: 1.25rem;
+  border-radius: 20px;
   border: 1px solid #ccc;
   height: auto;
   max-height: 250px;
-  padding: 1rem;
+  padding: 16px;
   max-width: 100%;
-  margin-top: 0.5rem;
-  margin-right: 1rem;
+  margin-top: 8px;
   -webkit-box-flex: 1;
   flex-grow: 1;
   min-width: 0px;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 .bot-form {
   margin-bottom: 0px;
-  font-size: 0.875rem;
+  font-size: 14px;
 }
 .bot-form-card {
   display: flex;
@@ -214,13 +251,15 @@
   margin-bottom: 5px;
 }
 .bot-form-input {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  border-radius: 1.25rem;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 20px;
   min-height: auto;
   padding: 10px;
   border: 1px solid #ccc;
   font-family: 'Roboto', sans-serif;
+  border: none;
+  outline: none;
 }
 
 .bot-form-button-div {
@@ -234,9 +273,9 @@
   background-color: #ee2f26;
   color: rgb(255, 255, 255);
   height: auto;
-  min-height: 2.5rem;
-  max-height: 3.75rem;
-  padding: 0.25rem 1rem;
+  min-height: 40px;
+  max-height: 60px;
+  padding: 4px 16px;
   line-height: 1.5rem;
   text-align: center;
   border: none;
@@ -247,7 +286,7 @@
   -ms-flex-item-align: start;
   align-self: flex-start;
   max-width: 100%;
-  height: 15px;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,10 +297,10 @@
 }
 
 .indicator .dot {
-  width: 4px;
-  height: 4px;
-  border-radius: 100%;
-  margin: 0 3px;
+      width: 10px;
+    height: 20px;
+    border-radius: 100%;
+    margin: 0px 2px;
   -webkit-animation: indicator-bounce 1s ease-in-out infinite both;
   animation: indicator-bounce 1s ease-in-out infinite both;
   -webkit-animation-delay: 0s;
@@ -300,3 +339,22 @@
   }
 }
 
+
+@media (max-width: 600px)  {
+  .chat-container-brand{
+    width: 100vw;
+    height: 100vh;
+  }
+}
+@media (max-width: 400px)  {
+  .input-chat-message input[type="text"] {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .input-chat-message button[type="submit"] {
+    padding: 10px 14px;
+  }
+  .bubble-button {
+    padding: 15px;
+  }
+}
